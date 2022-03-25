@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;600&display=swap" rel="stylesheet">   
+    <script src="pokedex.js"></script>
+</head>
+<body id="body">
+    <header>
+        <img src="media/pokedex-3d-logo.png" alt="">
+    </header>
+    <main>
+        <section class="container">
+                <a><input type="text" name="browswer" id="input-browser" placeholder="Ingresa nombre del pokemon" class="bwr" onkeyup="fetchPokemon(event)"></a>
+                <button onclick="fetchPokemon2(event)" class="btn-bwr"></button>
+        </section>
+        <section class="card-container">
+            <div class="card">
+                <img src="media/pokebola.png" id="pokemonImage" alt="">
+                <div class="card2"> 
+                    <label for="nm" class="labels">Nombre</label>
+                    <input type="text" id="pokeName" name="nm"></input><br>
+                    <label for="id" class="labels">Id</label>
+                    <input type="text" id="pokeId" name="id"></input><br>
+                    <label for="type" class="labels">Tipo</label>
+                    <input type="text" id="pokemonType" name="type"></input>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <i>Copyright</i>
+        <i>Autor Cristian Martínez</i>
+        <i>Launch X</i>
+    </footer>
+</body>
+</html>
