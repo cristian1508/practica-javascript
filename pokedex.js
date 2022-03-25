@@ -52,7 +52,9 @@ const setTypePokemon = (urlType) => {
 
 const errControl = () => {
     document.getElementById('pokemonImage').src = 'https://fb-dermatology.com/es/__base/2928DF0E806A6A0000000138F86EED1B/';
-    document.getElementById('pokeName', 'pokeId', 'pokemonType').value = '';
+    document.getElementById('pokeName').value = '';
+    document.getElementById('pokeId').value = '';
+    document.getElementById('pokemonType').value = '';
     document.getElementById('body').style.backgroundColor= '#fff';
 }
 
